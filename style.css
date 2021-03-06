@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital@1&display=swap");
+
+/** global styles**/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --intro-email-bg: hsl(217, 28%, 15%);
+  --main-background: hsl(218, 28%, 13%);
+  --footer-background: hsl(216, 53%, 9%);
+  --testimonial-background: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background: var(--main-background);
+  color: var(--white);
+}
+
+h2,
+h3,
+var,
+.cta {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+h2 {
+  font-size: 40px;
+}
+
+/** nav styles**/
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 73px 80px;
+  background: var(--intro-email-bg);
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items :not(:last-child) {
+  padding-right: 56px;
+}
+/** Hero section**/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--intro-email-bg) url(images/bg-curvy-desktop.svg) bottom
+    no-repeat;
+  background-size: 100% 270px;
+  text-align: center;
+}
+
+.hero img {
+  width: 739px;
+  height: 533px;
+}
+.hero h2 {
+  width: 742px;
+  margin: 46px;
+}
+.hero p {
+  width: 742px;
+  font-size: 22px;
+  padding: 0 30px;
+}
+.cta {
+  width: 280px;
+  padding: 20px 0;
+  border-radius: 50px;
+  margin: 30px 0;
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  border: none;
+}
+
+/** features**/
+
+.sw {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 94px 150px;
+  margin: 130px 0;
+  padding: 0 280px;
+}
+.feature {
+  text-align: center;
+}
+
+.feature h3 {
+  margin: 25px 0 12px 0;
+}
+
+/** more discription**/
+
+.extra-discription {
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+.img-box {
+  height: 460px;
+  width: auto;
+  margin-right: 45px;
+}
+.text-box :not(:last-child) {
+  margin-bottom: 25px;
+}
+.desk-link {
+  color: var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+}
+.desk-link img {
+  vertical-align: middle;
+  margin-left: 3px;
+}
